@@ -5,7 +5,9 @@
 - em-websocket
 - Google Chrome
 
+
     $ rackup
     $ ruby websocket.rb
     $ open http://localhost:9292/
+
 
