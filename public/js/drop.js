@@ -46,5 +46,7 @@ function getData(key) {
 // event handler
 function onDrop(event, ws){
     var song = getData('song');
-    ws.send('これいいよ！' + song);
+    var sid = document.getElementById('rack.session').value;
+    var msg = [sid, 'これいいよ！'+song].join(':');
+    ws.send(msg);
 }
